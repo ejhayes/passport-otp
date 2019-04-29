@@ -6,6 +6,11 @@ const express = require('express'),
   passport = require('passport'),
   LocalStrategy = require('passport-local').Strategy,
   OtpStrategy = require('../..').Strategy,
+  session = require('express-session'),
+  cookieParser = require('cookie-parser'),
+  logger = require('morgan'),
+  bodyParser = require('body-parser'),
+  methodOverride = require('method-override'),
   qrcode = require('qrcode');
 
 
@@ -51,6 +56,12 @@ function saveKeyForUserId(id, key, fn) {
   return fn(null);
 }
 
+function ensureSecondFactor(req, res, next) {
+  if (req.session.secondFactor == 'totp') {
+    return next();
+  }
+  res.redirect('/login-otp')
+}
 
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
@@ -120,16 +131,16 @@ passport.use(new OtpStrategy({
 var app = express();
 
 // configure Express
-app.configure(function () {
+
   app.set('views', __dirname + '/views');
   app.set('view engine', 'ejs');
   app.engine('ejs', require('ejs-locals'));
   app.use(express.static(__dirname + '/../../public'));
-  app.use(express.logger());
-  app.use(express.cookieParser());
-  app.use(express.bodyParser());
-  app.use(express.methodOverride());
-  app.use(express.session({
+  app.use(logger('dev'));
+  app.use(cookieParser());
+  app.use(bodyParser());
+  app.use(methodOverride());
+  app.use(session({
     secret: 'keyboard cat'
   }));
   app.use(flash());
@@ -137,8 +148,6 @@ app.configure(function () {
   // persistent login sessions (recommended).
   app.use(passport.initialize());
   app.use(passport.session());
-  app.use(app.router);
-});
 
 
 app.get('/', function (req, res) {
@@ -234,7 +243,7 @@ app.get('/login-otp', loggedin.ensureLoggedIn(),
   });
 
 app.post('/login-otp',
-  passport.authenticate('otplib', {
+  passport.authenticate('otp', {
     failureRedirect: '/login-otp',
     failureFlash: true
   }),
@@ -253,11 +262,3 @@ app.get('/logout', function (req, res) {
 app.listen(3000, function () {
   console.log('Express server listening on port 3000');
 });
-
-
-function ensureSecondFactor(req, res, next) {
-  if (req.session.secondFactor == 'totp') {
-    return next();
-  }
-  res.redirect('/login-otp')
-}

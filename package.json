@@ -32,17 +32,14 @@
   "main": "./lib",
   "dependencies": {
     "otplib": "^11.0.0",
-    "passport-strategy": "1.0.0",
-    "pkginfo": "0.2.x"
+    "passport-strategy": "^1.0.0",
+    "pkginfo": "^0.4.1"
   },
   "devDependencies": {
-    "mocha": "1.x.x",
-    "chai": "1.x.x"
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
   },
   "scripts": {
     "test": "NODE_PATH=./lib node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
-  },
-  "engines": {
-    "node": ">= 0.4.0"
   }
 }
