@@ -1,6 +1,6 @@
 {
-  "name": "passport-otp",
-  "version": "1.0.0",
+  "name": "passport-otp-strategy",
+  "version": "1.0.1",
   "description": "TOTP authentication strategy for Passport.",
   "keywords": [
     "passport",

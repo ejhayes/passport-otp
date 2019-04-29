@@ -20,7 +20,7 @@ policy, and outside the scope of both Passport and this strategy.
 
 ## Install
 
-    $ npm install passport-otp
+    $ npm install passport-otp-strategy
 
 ## Usage
 
