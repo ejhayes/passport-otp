@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/passport-totp.git"
+    "url": "git://github.com/ejhayes/passport-totp.git"
   },
   "bugs": {
     "url": "http://github.com/jaredhanson/passport-totp/issues"
@@ -31,7 +31,7 @@
   ],
   "main": "./lib",
   "dependencies": {
-    "notp": "2.0.x",
+    "otplib": "^11.0.0",
     "passport-strategy": "1.0.0",
     "pkginfo": "0.2.x"
   },

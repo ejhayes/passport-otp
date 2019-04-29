@@ -1,14 +1,14 @@
-var totp = require('index');
+var otp = require('index');
 
 
-describe('passport-totp', function() {
+describe('passport-otp', function() {
     
   it('should export version', function() {
-    expect(totp.version).to.be.a('string');
+    expect(otp.version).to.be.a('string');
   });
     
   it('should export Strategy', function() {
-    expect(totp.Strategy).to.be.a('function');
+    expect(otp.Strategy).to.be.a('function');
   });
   
 });
