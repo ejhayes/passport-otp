@@ -1,5 +1,8 @@
 # Passport-OTP
 
+[![npm](https://img.shields.io/npm/v/passport-otp-strategy.svg)](https://www.npmjs.com/package/passport-otp-strategy)
+[![Build Status](https://secure.travis-ci.org/ejhayes/passport-otp.png)](http://travis-ci.org/ejhayes/passport-otp)
+
 This is a fork of the [Passport-TOTP](https://github.com/jaredhanson/passport-totp) library and uses `otplib` instead of `notp`.
 
 [Passport](http://passportjs.org/) strategy for two-factor authentication using
@@ -72,8 +75,6 @@ For a complete, working example, refer to the [two-factor example](https://githu
 
     $ npm install
     $ make test
-
-[![Build Status](https://secure.travis-ci.org/ejhayes/passport-otp.png)](http://travis-ci.org/ejhayes/passport-otp)
 
 ## Credits
 
