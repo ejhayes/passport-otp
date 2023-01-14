@@ -36,10 +36,16 @@
     "pkginfo": "^0.4.1"
   },
   "devDependencies": {
+    "@auto-it/all-contributors": "^10.37.6",
+    "@auto-it/first-time-contributor": "^10.37.6",
+    "@auto-it/npm": "^10.37.6",
+    "auto": "^10.37.6",
     "chai": "^4.2.0",
+    "jshint": "^2.13.6",
     "mocha": "^6.1.4"
   },
   "scripts": {
+    "lint": "jshint lib test",
     "test": "NODE_PATH=./lib node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
   }
 }
