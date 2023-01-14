@@ -1,5 +1,5 @@
 {
-  "projectName": "passport-otp-strategy",
+  "projectName": "passport-otp",
   "projectOwner": "ejhayes",
   "repoType": "github",
   "repoHost": "https://github.com",
@@ -9,20 +9,6 @@
   "imageSize": 100,
   "commit": true,
   "commitConvention": "angular",
-  "contributors": [
-    {
-      "login": "ejhayes",
-      "name": "Eric Hayes",
-      "avatar_url": "https://avatars.githubusercontent.com/u/310233?v=4",
-      "profile": "https://github.com/ejhayes",
-      "contributions": [
-        "doc",
-        "infra",
-        "test",
-        "code"
-      ]
-    }
-  ],
+  "contributors": [],
   "contributorsPerLine": 7
 }
-
