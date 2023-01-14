@@ -21,8 +21,16 @@
         "test",
         "code"
       ]
+    },
+    {
+      "login": "Climax777",
+      "name": "Pieter Jordaan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/768925?v=4",
+      "profile": "http://craftycode.co.za/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
 }
-
