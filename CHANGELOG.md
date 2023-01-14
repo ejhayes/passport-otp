@@ -1,3 +1,15 @@
+# v1.2.1 (Sat Jan 14 2023)
+
+#### 🐛 Bug Fix
+
+- update all contributors config [#7](https://github.com/ejhayes/passport-otp/pull/7) ([@ejhayes](https://github.com/ejhayes))
+
+#### Authors: 1
+
+- Eric Hayes ([@ejhayes](https://github.com/ejhayes))
+
+---
+
 # v1.1.0 (Sat Jan 14 2023)
 
 :tada: This release contains work from a new contributor! :tada:
