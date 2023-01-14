@@ -42,7 +42,7 @@
     "auto": "^10.37.6",
     "chai": "^4.2.0",
     "jshint": "^2.13.6",
-    "mocha": "^6.1.4"
+    "mocha": "^10.2.0"
   },
   "scripts": {
     "lint": "jshint lib test",
