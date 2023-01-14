@@ -1,4 +1,7 @@
 # Passport-OTP
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![npm](https://img.shields.io/npm/v/passport-otp-strategy.svg)](https://www.npmjs.com/package/passport-otp-strategy)
 [![Build Status](https://secure.travis-ci.org/ejhayes/passport-otp.png)](http://travis-ci.org/ejhayes/passport-otp)
@@ -87,3 +90,16 @@ For a complete, working example, refer to the [two-factor example](https://githu
 ## Contributing
 
 PRs are welcome!
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
